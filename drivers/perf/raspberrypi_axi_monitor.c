@@ -396,7 +396,7 @@ static const struct bwconfig_config config_2712 = {
 	vpu_bus_string_2712, ARRAY_SIZE(vpu_bus_string_2712),
 };
 
-const static char *monitor_name[] = {
+static const char *monitor_name[] = {
 	"System",
 	"VPU"
 };
