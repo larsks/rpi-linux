@@ -116,7 +116,6 @@ static void brcmstb_gpio_set_imask(struct brcmstb_gpio_bank *bank,
 static int brcmstb_gpio_to_irq(struct gpio_chip *gc, unsigned offset)
 {
 	struct brcmstb_gpio_priv *priv = brcmstb_gpio_gc_to_priv(gc);
-	struct brcmstb_gpio_bank *bank = gpiochip_get_data(gc);
 	/* gc_offset is relative to this gpio_chip; want real offset */
 	int hwirq = offset + gc->offset;
 
